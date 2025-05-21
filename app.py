@@ -2,11 +2,6 @@ import streamlit as st
 from hybrid_recommender import hybrid_recommendations
 import pandas as pd
 
-# لازم تكون عندك قائمة عناوين الأفلام
-# مثال: لو عندك DataFrame للأفلام اسمه movies_df
-# movie_titles_list = movies_df['title'].tolist()
-
-# هنا عشان أمثلها مؤقتاً (استبدلها بقائمة حقيقية من بياناتك)
 movie_titles_list = [
     "Toy Story (1995)",
     "Jumanji (1995)",
