@@ -2,13 +2,10 @@ import streamlit as st
 from hybrid_recommender import hybrid_recommendations
 import pandas as pd
 
-movie_titles_list = [
-    "Toy Story (1995)",
-    "Jumanji (1995)",
-    "Grumpier Old Men (1995)",
-    "Waiting to Exhale (1995)",
-    "Father of the Bride Part II (1995)"
-]
+movies_df = pd.read_csv("data/movies.csv")
+
+movie_titles_list = movies_df['title'].dropna().unique().tolist()
+
 
 st.title("Hybrid Movie Recommendation System")
 st.markdown("Get personalized movie suggestions based on your preferences!")
