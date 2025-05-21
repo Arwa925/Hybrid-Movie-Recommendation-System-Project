@@ -3,4 +3,4 @@ pandas
 numpy
 scikit-learn
 joblib
-scikit-surprise @ git+https://github.com/NicolasHug/Surprise.git
+scikit-surprise
